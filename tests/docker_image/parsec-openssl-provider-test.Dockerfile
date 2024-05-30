@@ -34,7 +34,7 @@ RUN git clone https://github.com/parallaxsecond/parsec.git --branch main \
     && cargo build --features "mbed-crypto-provider,direct-authenticator"
 
 #TODO: This change is temporary and will be removed after a new parsec-tool version is released
-RUN git clone https://github.com/parallaxsecond/parsec-tool.git --branch main \
+RUN git clone https://github.com/tgonzalezorlandoarm/parsec-tool.git --branch tg/bump-rcgen-w-revert \
     && cd parsec-tool \
     && cargo install patch-crate \
     && cargo patch-crate \
